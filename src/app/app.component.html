@@ -1,0 +1,85 @@
+
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Sistema</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" routerLink="loginusuario"  aria-current="page">LOGIN <span class="visually-hidden">(current)</span></a>
+                </li>
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ejemplo</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listar" href="#">Empleados</a>
+                        <!-- <a class="dropdown-item" routerLink="agregar" href="#">Agregar</a> -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tablas</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listartemas" href="#">Temas</a>
+                        <a class="dropdown-item" routerLink="listartipoa" href="#">Tipo de Actividad</a>
+                        <a class="dropdown-item" routerLink="listarformatoa" href="#">Formato de Archivo</a>
+                        <!-- <a class="dropdown-item" routerLink="agregar" href="#">Agregar</a> -->
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Esquema</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listarcursos" href="#">Cursos</a>
+                        <a class="dropdown-item" routerLink="listaractividades" href="#">Actividades</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grupos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listargrupos" href="#">Grupos</a>
+                        <a class="dropdown-item" routerLink="listargrupoalumnos" href="#">Grupos de Alumnos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Alumnos</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listaraalumnos" href="#">Actividades Alumnos</a>
+                        <a class="dropdown-item" routerLink="listarcalumnos" href="#">Cursos Alumnos</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" routerLink="listarusuarios" href="#">Usuarios</a>
+                    </div>
+                </li>
+
+            </ul>
+
+
+
+
+
+        </div>
+  </div>
+</nav>
+
+<!--
+<nav class="navbar navbar-expand navbar-light bg-light">
+    <div class="nav navbar-nav">
+        <a class="nav-item nav-link" routerLink="listar" >Listar</a>
+        <a class="nav-item nav-link" routerLink="agregar" >Agregar</a>
+    </div>
+</nav>
+-->
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>

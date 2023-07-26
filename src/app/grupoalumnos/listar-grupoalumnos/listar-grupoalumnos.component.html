@@ -1,0 +1,43 @@
+<div class="card">
+    <div class="card-header">
+      <button type="button" routerLink="/agregar" class="btn btn-primary">
+        Agregar
+      </button>
+    </div>
+    <div class="card-body">
+      <h2>Grupos de Alumnos</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>user_id</th>
+            <th>grupo_id</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registro of gruposa; let icontrol = index">
+            <td scope="row">{{ registro.id }}</td>
+            <td>{{ registro.user_id }}</td>
+            <td>{{ registro.grupo_id }}</td>
+            <td>
+              <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="nav navbar-nav">
+                  <!--   <a class="nav-item nav-link" routerLink="/editar/{{ registro.id }}" >Editar</a> -->
+                </div>
+              </nav>
+            </td>
+            <td>
+              <nav class="navbar navbar-expand navbar-light bg-light">
+                <div class="nav navbar-nav">
+                  <!--  <button type="button" (click)="borrarRegistro( registro.id, icontrol )"  class="btn btn-danger">Borrar</button> -->
+                </div>
+              </nav>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
