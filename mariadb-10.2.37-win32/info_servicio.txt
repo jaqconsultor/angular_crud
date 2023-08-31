@@ -1,0 +1,46 @@
+ 79.061.460,00
+ declaracion del impuesto
+ 
+ my.ini
+ [mysqld]
+# coloca en basedir el directorio de instalación
+basedir=E:/mysql
+# coloca en datadir el directorio de datos
+datadir=E:/mydata/data
+
+
+mysqld
+
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqld --console
+
+
+Para iniciar el servidor mysqld desde la línea de comandos, se debería abrir una ventana de consola (o “ventana DOS ”) e ingresar este comando:
+
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqld
+
+
+
+El siguiente comando detendrá al servidor MySQL:
+
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqladmin -u root shutdown
+
+
+La última opción es ejecutar mysqld con --standalone --debug. En este caso, mysqld guardará un fichero de registro llamado C:\mysqld.trace el cual debería contener la razón por la cual mysqld no se inicia. Consulte Sección D.1.2, “Crear ficheros de traza”.
+
+El comando mysqld --verbose --help sirve para mostrar todas las opciones que mysqld es capaz de comprender.
+
+
+Antes de instalar MySQL como un servicio Windows, se debería detener primero el servidor -si está en ejecución- mediante el siguiente comando:
+
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqladmin -u root shutdown
+Nota: si la cuenta de usuario MySQL root está protegida por una contraseña, la forma de invocar este comando será C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqladmin -u root -p shutdown y porporcionando la contraseña cuando sea solicitada.
+
+
+Colocar como Servicio de Windows
+A modo de un ejemplo más complejo, considérese el siguiente comando:
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqld --install MySQL --defaults-file=C:\my-opts.cnf
+
+
+Para cancelar un servidor que fue instalado como servicio, primero se lo debe detener, si está en ejecución, por medio del comando NET STOP MYSQL. Luego de esto se usará la opción --remove para cancelarlo:
+C:\> C:\Program Files\MySQL\MySQL Server 5.0\bin\mysqld --remove
+

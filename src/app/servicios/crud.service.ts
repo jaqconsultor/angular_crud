@@ -9,12 +9,13 @@ import { cursos } from './cursos';
 })
 export class CrudService {
   
-  API: string ='http://localhost:8089/aulascursosya/agregar.php';
-  APIC: string ='http://localhost:8089/aulascursosya/consultar.php';
-  APIM: string ='http://localhost:8089/aulascursosya/modificar.php';
-  APIE: string ='http://localhost:8089/aulascursosya/eliminar.php';
-  APIL: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=empleados';
+//  API: string ='http://localhost:8089/aulascursosya/agregar.php';
+//  APIC: string ='http://localhost:8089/aulascursosya/consultar.php';
+//  APIM: string ='http://localhost:8089/aulascursosya/modificar.php';
+//  APIE: string ='http://localhost:8089/aulascursosya/eliminar.php';
+//  APIL: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=empleados';
 
+/*
   APILTema: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=temas';
   APILTipoa: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=tipo_actividad';
   APILFormatoa: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=formato_archivo';
@@ -25,9 +26,9 @@ export class CrudService {
   APILUsers: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=users';
   APILAluA: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=actividaalumnos';
   APILAluC: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=cursosalumnos';
-
+*/
   
-/*
+
   APILTema: string ='http://localhost/rest-ci3/crud/index/scr/temas';
   APILTipoa: string ='http://localhost/rest-ci3/crud/index/scr/tipo_actividad';
   APILFormatoa: string ='http://localhost/rest-ci3/crud/index/scr/formato_archivo';
@@ -38,16 +39,16 @@ export class CrudService {
   APILUsers: string ='http://localhost/rest-ci3/crud/index/scr/users';
   APILAluA: string ='http://localhost/rest-ci3/crud/index/scr/actividaalumnos';
   APILAluC: string ='http://localhost/rest-ci3/crud/index/scr/cursosalumnos';
-*/
+
   //http://localhost/rest-ci3/crud/index/scr/users
 
-  /*
-  API: string ='http://localhost/empleados/agregar.php';
-  APIC: string ='http://localhost/empleados/consultar.php';
-  APIM: string ='http://localhost/empleados/modificar.php';
-  APIE: string ='http://localhost/empleados/eliminar.php';
-  APIL: string ='http://localhost/empleados/listar.php';
-*/
+  
+  API: string ='http://localhost:8383/empleados/agregar.php';
+  APIC: string ='http://localhost:8383/empleados/consultar.php';
+  APIM: string ='http://localhost:8383/empleados/modificar.php';
+  APIE: string ='http://localhost:8383/empleados/eliminar.php';
+  APIL: string ='http://localhost:8383/empleados/listar.php';
+
 
   constructor( private clienteHTTP:HttpClient) { }
 

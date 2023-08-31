@@ -1,0 +1,1 @@
+INSERT INTO empleados(nombre) VALUES('jesus') ;

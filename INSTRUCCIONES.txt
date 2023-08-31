@@ -1,0 +1,23 @@
+
+1.- Insstalar ( Para habilitar el Stack de PHP 73 )
+C:\angular_crud\recursos\VC_redist.x86.exe 
+C:\angular_crud\recursos\vcredist_x86.exe
+
+
+2.- INSTALAR LA VERSION DE NODE JS version LTS
+https://nodejs.org/es
+v18.16.1.
+
+2.- abrir una consola de comando e Instalar el ANGULAR
+CMD
+npm install -g @angular/cli
+
+3.- Listo
+Ejecutar los archivos 
+01 ( modo administrador ) Monta los Servicios de stack de MariaDB y PHP 
+04 
+05
+06
+07
+08
+10 ( Modo administrador ) Borra los Servicios creados de MariaDB y PHP

@@ -1,49 +1,12 @@
-<!--
-    <div class="container">
-        <section>
-          <div class="card">
-            <div class="card-title">{{ title }}</div>
-            <br />
-            <hr />
-            <br />
-  
-            <div class="card-body">{{ body }}</div>
-            <br />
-            <hr />
-            <br />
-  
-            <div class="card-footer">{{ footer }}</div>
-          </div>
-        </section>
-
-        <button type="submit" class="btn btn-primary" (click)="cambiartitulo()">Change Title</button>
-        <button type="submit" class="btn btn-primary" (click)="cambiarbody()">Change Body</button>
-        <button type="submit" class="btn btn-primary" (click)="cambiarpie()">Change Footer</button>
-
-      </div>
-
-
-
-<hr>
-
-<div class="container">
-    <section>
-      <div class="card">
-        <div class="card-title">API Function</div>
-        
-        <div class="card-body">{{ infoapi }}</div>
-
-        <button type="submit" class="btn btn-primary" (click)="llamarapi()">Change Title</button>
-      </div>
-    </section>
-
--->
 
 <div class="card">
 
     <div class="card-header">
         <h2>Empleados</h2>
-    </div>
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <button type="button" routerLink="/agregar" class="btn btn-primary">Agregar</button>
+        </nav>
+</div>
     <div class="card-body">
         
         <table class="table">
