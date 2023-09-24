@@ -2,7 +2,7 @@
 <div class="card">
 
     <div class="card-header">
-        <button type="button" routerLink="/agregar" class="btn btn-primary">Agregar</button>     
+        <button type="button" routerLink="/agregartemas" class="btn btn-primary">Agregar</button>
     </div>
     <div class="card-body">
         <h2>Temas</h2>
@@ -22,18 +22,18 @@
                     <td>
                         <nav class="navbar navbar-expand navbar-light bg-light">
                             <div class="nav navbar-nav">
-                              <!--   <a class="nav-item nav-link" routerLink="/editar/{{ registro.id }}" >Editar</a> -->
+                              <a class="nav-item nav-link" routerLink="/editartemas/{{ registro.id }}" >Editar</a>
                             </div>
                         </nav>
-                    
+
                     </td>
                     <td>
                         <nav class="navbar navbar-expand navbar-light bg-light">
                             <div class="nav navbar-nav">
-                              <!--  <button type="button" (click)="borrarRegistro( registro.id, icontrol )"  class="btn btn-danger">Borrar</button> -->
+                              <button type="button" (click)="borrarRegistro( registro.id, icontrol )"  class="btn btn-danger">Borrar</button>
                             </div>
                         </nav>
-                    
+
                     </td>
             </tbody>
         </table>

@@ -13,19 +13,54 @@ export class ListarFormatoaComponent implements OnInit {
 
   registros:any;
 
-  constructor(
-    private crudServicio:CrudService, private serviapi:LeerapiService, private ruta:Router
-  ) { 
+  constructor(private crudServicio:CrudService, private serviapi:LeerapiService, private ruta:Router) {
 
-    this.crudServicio.ListarFormatoa().subscribe(
-      respuesta=>{
+    this.crudServicio.ListarFormatoa().subscribe(respuesta=>{
       //console.log(respuesta);
       this.registros=respuesta;
-       }
-    )
+
+    });
+
   }
 
   ngOnInit(): void {
   }
 
+  borrarRegistro( id: any, icontrol: any ) {
+    this.crudServicio.BorrarFormatoa( id ).subscribe(
+      respuesta=>{
+        // this.ruta.navigateByUrl('/listar');
+        this.registros.splice( icontrol, 1);
+      }
+    );
+
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

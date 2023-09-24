@@ -1,4 +1,4 @@
-export class registro {
+export class tema {
     id!:String;
     nombre!:String;
 }

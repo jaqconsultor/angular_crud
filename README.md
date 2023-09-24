@@ -1,3 +1,23 @@
+
+
+# Instrucciones Ejecutando los Archivos CMD ( Windows )
+- 01 Instalar el servicio de MariaDB y el Servicio de PHP ( Click Boton Derecho Como Administrador)
+- 05 Ejecutar el Proyecto de Angular para la WEB y Verlo en el Explorador
+- 06 Compilar y Contruir el Proyecto Angular
+- 10 Borrar los Servicios Creados
+
+
+
+
+
+
+
+
+
+
+
+
+
 # CrudAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.

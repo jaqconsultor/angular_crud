@@ -1,1 +1,21 @@
-<p>agregar-formatoa works!</p>
+<div class="card">
+  <form ngNativeValidate [formGroup]="formularioGrupo"    (ngSubmit)="enviardatos()">
+    <div class="card-header">
+      Agregar Formato de Archvivo
+    </div>
+    <div class="card-body">
+
+      <div class="form-group">
+        <label for="">nombre</label>
+        <input required type="text" class="form-control" formControlName="nombre" name="nombre" id="nombre" placeholder="nombre">
+      </div>
+
+      <div class="card-footer text-muted">
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <a class="dropdown-item" routerLink="/listarformatoa" href="#">Cancelar</a>
+      </div>
+
+
+    </div>
+  </form>
+</div>

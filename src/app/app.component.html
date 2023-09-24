@@ -9,18 +9,20 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav me-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#" routerLink="loginusuario"  aria-current="page">LOGIN <span class="visually-hidden">(current)</span></a>
                 </li>
                 <!--
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
-                </li>-->
+                </li>
+                -->
+              <!--
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ejemplo</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" routerLink="listar" href="#">Empleados</a> 
+                        <a class="dropdown-item" routerLink="listar" href="#">Empleados</a>
                     </div>
                 </li>
+              -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tablas</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
@@ -37,7 +39,7 @@
                         <a class="dropdown-item" routerLink="listaractividades" href="#">Actividades</a>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
+<!--                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Grupos</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
                         <a class="dropdown-item" routerLink="listargrupos" href="#">Grupos</a>
@@ -52,32 +54,33 @@
                         <a class="dropdown-item" routerLink="listarcalumnos" href="#">Cursos Alumnos</a>
                     </div>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" routerLink="listarusuarios" href="#">Usuarios</a>
-                    </div>
-                </li>
-
-            </ul>
-
-
-
-
-
-        </div>
-  </div>
-</nav>
-
-<!--
-<nav class="navbar navbar-expand navbar-light bg-light">
-    <div class="nav navbar-nav">
-        <a class="nav-item nav-link" routerLink="listar" >Listar</a>
-        <a class="nav-item nav-link" routerLink="agregar" >Agregar</a>
-    </div>
-</nav>
 -->
+              <!--                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administración</a>
+                                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                      <a class="dropdown-item" routerLink="listarusuarios" href="#">Roles de Usuarios</a>
+                                    <a class="dropdown-item" routerLink="listarusuarios" href="#">Usuarios</a>
+                                  </div>
+                              </li>
+   -->
+                          </ul>
+
+
+
+
+
+                      </div>
+                </div>
+              </nav>
+
+              <!--
+              <nav class="navbar navbar-expand navbar-light bg-light">
+                  <div class="nav navbar-nav">
+                      <a class="nav-item nav-link" routerLink="listar" >Listar</a>
+                      <a class="nav-item nav-link" routerLink="agregar" >Agregar</a>
+                  </div>
+              </nav>
+              -->
 
 <div class="container">
     <router-outlet></router-outlet>

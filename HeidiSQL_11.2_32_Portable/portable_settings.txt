@@ -50,7 +50,8 @@ ColWidths_frmTableEditor.listCheckConstraints<|||>1<|||>200,420
 ColsVisible_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
 ColPositions_frmTableEditor.listCheckConstraints<|||>1<|||>0,1
 ColSort_frmTableEditor.listCheckConstraints<|||>1<|||>-1,0
-SQLFile0<|||>1<|||>C:\angular_crud\HeidiSQL_11.2_32_Portable\Backups\query-tab-2023-08-31_11-49-52-084.sql
+SQLFile0<|||>1<|||>C:\angular_crud\sql\aulascur_sos.sql
+SQLFile1<|||>1<|||>C:\angular_crud\HeidiSQL_11.2_32_Portable\Backups\query-tab-2023-08-31_11-49-52-084.sql
 Servers\Unnamed\SessionCreated<|||>1<|||>2021-04-02 14:46:50
 Servers\Unnamed\Host<|||>1<|||>127.0.0.1
 Servers\Unnamed\WindowsAuth<|||>3<|||>0
@@ -84,10 +85,10 @@ Servers\Unnamed\SSL_CA<|||>1<|||>
 Servers\Unnamed\SSL_Cipher<|||>1<|||>
 Servers\Unnamed\IgnoreDatabasePattern<|||>1<|||>
 Servers\Unnamed\ServerVersionFull<|||>1<|||>10.2.37-MariaDB - mariadb.org binary distribution
-Servers\Unnamed\ConnectCount<|||>3<|||>12
+Servers\Unnamed\ConnectCount<|||>3<|||>13
 Servers\Unnamed\ServerVersion<|||>3<|||>100237
-Servers\Unnamed\LastConnect<|||>1<|||>2023-08-31 12:27:12
-Servers\Unnamed\lastUsedDB<|||>1<|||>empleados
+Servers\Unnamed\LastConnect<|||>1<|||>2023-09-24 11:16:31
+Servers\Unnamed\lastUsedDB<|||>1<|||>aulascur_sos
 Servers\Unnamed\RefusedCount<|||>3<|||>3
 Servers\Unnamed\QueryHistory\1<|||>1<|||>2023-08-31 11:50:14|empleados|0|INSERT INTO empleados(nombre) VALUES('jesus') 
 Servers\Unnamed\QueryHistory\2<|||>1<|||>2023-08-31 11:50:21|empleados|0|INSERT INTO empleados(nombre) VALUES('jesus') ;

@@ -1,4 +1,4 @@
-export class tipoa {
+export class formatoa {
     id!:String;
     nombre!:String;
 }

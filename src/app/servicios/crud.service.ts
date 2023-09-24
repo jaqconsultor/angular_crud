@@ -1,53 +1,50 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {Observable } from 'rxjs';
+import { Observable } from 'rxjs';
+
+// Empleado
 import { registro } from './registro';
+
+// AulasCursos
+import { tema } from './tema';
+import { tipoa } from './tipoactividad';
+import { formatoa } from './formatoa';
+
+
 import { cursos } from './cursos';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CrudService {
-  
-//  API: string ='http://localhost:8089/aulascursosya/agregar.php';
-//  APIC: string ='http://localhost:8089/aulascursosya/consultar.php';
-//  APIM: string ='http://localhost:8089/aulascursosya/modificar.php';
-//  APIE: string ='http://localhost:8089/aulascursosya/eliminar.php';
-//  APIL: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=empleados';
 
-/*
-  APILTema: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=temas';
-  APILTipoa: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=tipo_actividad';
-  APILFormatoa: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=formato_archivo';
-  APILCursos: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=cursos';
-  APILActividades: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=actividades';
-  APILGrupos: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=grupo';
-  APILGruposA: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=grupoalumnos';
-  APILUsers: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=users';
-  APILAluA: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=actividaalumnos';
-  APILAluC: string ='http://localhost:8089/aulascursosya/api.php?acc=scr' + '&tab' + '=cursosalumnos';
-*/
-  
-
-  APILTema: string ='http://localhost/rest-ci3/crud/index/scr/temas';
-  APILTipoa: string ='http://localhost/rest-ci3/crud/index/scr/tipo_actividad';
-  APILFormatoa: string ='http://localhost/rest-ci3/crud/index/scr/formato_archivo';
-  APILCursos: string ='http://localhost/rest-ci3/crud/index/scr/cursos';
-  APILActividades: string ='http://localhost/rest-ci3/crud/index/scr/actividades';
-  APILGrupos: string ='http://localhost/rest-ci3/crud/index/scr/grupo';
-  APILGruposA: string ='http://localhost/rest-ci3/crud/index/scr/grupoalumnos';
-  APILUsers: string ='http://localhost/rest-ci3/crud/index/scr/users';
-  APILAluA: string ='http://localhost/rest-ci3/crud/index/scr/actividaalumnos';
-  APILAluC: string ='http://localhost/rest-ci3/crud/index/scr/cursosalumnos';
-
-  //http://localhost/rest-ci3/crud/index/scr/users
-
-  
+  // Empleado
   API: string ='http://localhost:8383/empleados/agregar.php';
   APIC: string ='http://localhost:8383/empleados/consultar.php';
   APIM: string ='http://localhost:8383/empleados/modificar.php';
   APIE: string ='http://localhost:8383/empleados/eliminar.php';
   APIL: string ='http://localhost:8383/empleados/listar.php';
+
+  // Temas
+  APIA_TEMA: string ='http://localhost:8383/aulascursosya/tema/agregar.php';
+  APIC_TEMA: string ='http://localhost:8383/aulascursosya/tema/consultar.php';
+  APIM_TEMA: string ='http://localhost:8383/aulascursosya/tema/modificar.php';
+  APIE_TEMA: string ='http://localhost:8383/aulascursosya/tema/eliminar.php';
+  APIL_TEMA: string ='http://localhost:8383/aulascursosya/tema/listar.php';
+
+  // Tipo de Actividad
+  APIA_TIPOA: string ='http://localhost:8383/aulascursosya/tipoactividad/agregar.php';
+  APIC_TIPOA: string ='http://localhost:8383/aulascursosya/tipoactividad/consultar.php';
+  APIM_TIPOA: string ='http://localhost:8383/aulascursosya/tipoactividad/modificar.php';
+  APIE_TIPOA: string ='http://localhost:8383/aulascursosya/tipoactividad/eliminar.php';
+  APIL_TIPOA: string ='http://localhost:8383/aulascursosya/tipoactividad/listar.php';
+
+  // Formato de Actividad
+  APIA_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/agregar.php';
+  APIC_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/consultar.php';
+  APIM_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/modificar.php';
+  APIE_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/eliminar.php';
+  APIL_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/listar.php';
 
 
   constructor( private clienteHTTP:HttpClient) { }
@@ -74,45 +71,107 @@ export class CrudService {
     return this.clienteHTTP.post(this.APIM + "?id=" + id,datosRegistro);
   }
 
+  // Temas
   ListarTemas():Observable<any> {
-    return this.clienteHTTP.get(this.APILTema);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
+  AgregarTema( datosRegistro:tema):Observable<any> {
+    return this.clienteHTTP.post(this.APIA_TEMA,datosRegistro);
+  }
+
+  BorrarTema( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIE_TEMA + "?id=" + id );
+  }
+
+  MostrarTema( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIC_TEMA + "?id=" + id );
+  }
+
+  ModificarTema( id:any, datosRegistro:tema):Observable<any> {
+    return this.clienteHTTP.post(this.APIM_TEMA + "?id=" + id,datosRegistro);
+  }
+
+
+  // Tipo de Actividad
   ListarTipoa():Observable<any> {
-    return this.clienteHTTP.get(this.APILTipoa);
+    return this.clienteHTTP.get(this.APIL_TIPOA);
   }
 
+  AgregarTipoa( datosRegistro:tipoa):Observable<any> {
+    return this.clienteHTTP.post(this.APIA_TIPOA,datosRegistro);
+  }
+
+  BorrarTipoa( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIE_TIPOA + "?id=" + id );
+  }
+
+  MostrarTipoa( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIC_TIPOA + "?id=" + id );
+  }
+
+  ModificarTipoa( id:any, datosRegistro:tipoa):Observable<any> {
+    return this.clienteHTTP.post(this.APIM_TIPOA + "?id=" + id,datosRegistro);
+  }
+
+
+// Formato de Archivo
   ListarFormatoa():Observable<any> {
-    return this.clienteHTTP.get(this.APILFormatoa);
+    return this.clienteHTTP.get(this.APIL_FORMA);
   }
 
-  ListarCursos():Observable<any> {
-    return this.clienteHTTP.get(this.APILCursos);
+  AgregarFormatoa( datosRegistro:formatoa):Observable<any> {
+    return this.clienteHTTP.post(this.APIA_FORMA,datosRegistro);
+  }
+
+  BorrarFormatoa( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIE_FORMA + "?id=" + id );
+  }
+
+  MostrarFormatoa( id:any ):Observable<any> {
+    return this.clienteHTTP.get( this.APIC_FORMA + "?id=" + id );
+  }
+
+  ModificarFormatoa( id:any, datosRegistro:formatoa):Observable<any> {
+    return this.clienteHTTP.post(this.APIM_FORMA + "?id=" + id,datosRegistro);
+  }
+
+
+
+
+
+///////////////////////
+
+/////
+ListarCursos():Observable<any> {
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarActividades():Observable<any> {
-    return this.clienteHTTP.get(this.APILActividades);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarGrupos():Observable<any> {
-    return this.clienteHTTP.get(this.APILGrupos);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarGruposA():Observable<any> {
-    return this.clienteHTTP.get(this.APILGruposA);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarUsuarios():Observable<any> {
-    return this.clienteHTTP.get(this.APILUsers);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarAluC():Observable<any> {
-    return this.clienteHTTP.get(this.APILAluC);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
 
   ListarAluA():Observable<any> {
-    return this.clienteHTTP.get(this.APILAluA);
+    return this.clienteHTTP.get(this.APIL_TEMA);
   }
+
+
 
 }
 

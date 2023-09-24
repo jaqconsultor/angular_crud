@@ -13,22 +13,45 @@ export class ListarTipoaComponent implements OnInit {
 
   registros:any;
 
-  constructor(
-    private crudServicio:CrudService, private serviapi:LeerapiService, private ruta:Router
-  ) { 
 
-    this.crudServicio.ListarTipoa().subscribe(
-      respuesta=>{
+  constructor(private crudServicio:CrudService, private serviapi:LeerapiService, private ruta:Router) {
+
+    this.crudServicio.ListarTipoa().subscribe(respuesta=>{
       //console.log(respuesta);
       this.registros=respuesta;
-       }
-    )
+
+    });
+
   }
 
   ngOnInit(): void {
   }
 
+  borrarRegistro( id: any, icontrol: any ) {
+
+    this.crudServicio.BorrarTipoa( id ).subscribe(
+      respuesta=>{
+        // this.ruta.navigateByUrl('/listar');
+        this.registros.splice( icontrol, 1);
+      }
+    );
+
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

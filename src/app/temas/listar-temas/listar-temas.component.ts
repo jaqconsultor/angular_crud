@@ -28,8 +28,8 @@ export class ListarTemasComponent implements OnInit {
   }
 
   borrarRegistro( id: any, icontrol: any ) {
-  
-    this.crudServicio.BorrarEmpleado( id ).subscribe(
+
+    this.crudServicio.BorrarTema( id ).subscribe(
       respuesta=>{
        // this.ruta.navigateByUrl('/listar');
         this.registros.splice( icontrol, 1);
