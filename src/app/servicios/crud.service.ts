@@ -18,6 +18,8 @@ import { cursos } from './cursos';
 })
 export class CrudService {
 
+  BASE: string = "http://localhost:8383/aulascursosya/"
+
   // Empleado
   API: string ='http://localhost:8383/empleados/agregar.php';
   APIC: string ='http://localhost:8383/empleados/consultar.php';
@@ -25,6 +27,9 @@ export class CrudService {
   APIE: string ='http://localhost:8383/empleados/eliminar.php';
   APIL: string ='http://localhost:8383/empleados/listar.php';
 
+  //http://localhost:8383/aulascursosya/
+      
+  
   // Temas
   APIA_TEMA: string ='http://localhost:8383/aulascursosya/tema/agregar.php';
   APIC_TEMA: string ='http://localhost:8383/aulascursosya/tema/consultar.php';
@@ -45,6 +50,7 @@ export class CrudService {
   APIM_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/modificar.php';
   APIE_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/eliminar.php';
   APIL_FORMA: string ='http://localhost:8383/aulascursosya/formatoarchivo/listar.php';
+
 
 
   constructor( private clienteHTTP:HttpClient) { }
