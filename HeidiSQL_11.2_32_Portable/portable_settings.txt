@@ -85,9 +85,9 @@ Servers\Unnamed\SSL_CA<|||>1<|||>
 Servers\Unnamed\SSL_Cipher<|||>1<|||>
 Servers\Unnamed\IgnoreDatabasePattern<|||>1<|||>
 Servers\Unnamed\ServerVersionFull<|||>1<|||>10.2.37-MariaDB - mariadb.org binary distribution
-Servers\Unnamed\ConnectCount<|||>3<|||>13
+Servers\Unnamed\ConnectCount<|||>3<|||>14
 Servers\Unnamed\ServerVersion<|||>3<|||>100237
-Servers\Unnamed\LastConnect<|||>1<|||>2023-09-24 11:16:31
+Servers\Unnamed\LastConnect<|||>1<|||>2023-09-26 14:52:25
 Servers\Unnamed\lastUsedDB<|||>1<|||>aulascur_sos
 Servers\Unnamed\RefusedCount<|||>3<|||>3
 Servers\Unnamed\QueryHistory\1<|||>1<|||>2023-08-31 11:50:14|empleados|0|INSERT INTO empleados(nombre) VALUES('jesus') 
