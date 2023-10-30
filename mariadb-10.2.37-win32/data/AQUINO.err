@@ -358,3 +358,99 @@ Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribut
 2023-09-28 10:42:32 8300 [Note] Added new Master_info '' to hash table
 2023-09-28 10:42:32 8300 [Note] C:\angular_crud\mariadb-10.2.37-win32\bin\mysqld.exe: ready for connections.
 Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribution
+2023-10-27 15:22:00 16120 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-10-27 15:22:00 16120 [Note] InnoDB: Uses event mutexes
+2023-10-27 15:22:00 16120 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-10-27 15:22:00 16120 [Note] InnoDB: Number of pools: 1
+2023-10-27 15:22:00 16120 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-10-27 15:22:00 16120 [Note] InnoDB: Initializing buffer pool, total size = 384M, instances = 1, chunk size = 128M
+2023-10-27 15:22:00 16120 [Note] InnoDB: Completed initialization of buffer pool
+2023-10-27 15:22:00 16120 [Note] InnoDB: Highest supported file format is Barracuda.
+2023-10-27 15:22:00 16120 [Note] InnoDB: Starting crash recovery from checkpoint LSN=51657517
+2023-10-27 15:22:01 16120 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-10-27 15:22:01 16120 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-10-27 15:22:01 16120 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-10-27 15:22:01 16120 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-10-27 15:22:01 16120 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-10-27 15:22:01 16120 [Note] InnoDB: Waiting for purge to start
+2023-10-27 15:22:01 16120 [Note] InnoDB: 5.7.33 started; log sequence number 51657526
+2023-10-27 15:22:01 19548 [Note] InnoDB: Loading buffer pool(s) from c:\angular_crud\mariadb-10.2.37-win32\data\ib_buffer_pool
+2023-10-27 15:22:01 19548 [Note] InnoDB: Buffer pool(s) load completed at 231027 15:22:01
+2023-10-27 15:22:01 16120 [Note] Plugin 'FEEDBACK' is disabled.
+2023-10-27 15:22:01 16120 [Note] Server socket created on IP: '::'.
+2023-10-27 15:22:01 16120 [Note] Reading of all Master_info entries succeeded
+2023-10-27 15:22:01 16120 [Note] Added new Master_info '' to hash table
+2023-10-27 15:22:01 16120 [Note] C:\angular_crud\mariadb-10.2.37-win32\bin\mysqld.exe: ready for connections.
+Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribution
+2023-10-27 22:53:10 8544 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-10-27 22:53:10 8544 [Note] InnoDB: Uses event mutexes
+2023-10-27 22:53:10 8544 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-10-27 22:53:10 8544 [Note] InnoDB: Number of pools: 1
+2023-10-27 22:53:10 8544 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-10-27 22:53:10 8544 [Note] InnoDB: Initializing buffer pool, total size = 384M, instances = 1, chunk size = 128M
+2023-10-27 22:53:10 8544 [Note] InnoDB: Completed initialization of buffer pool
+2023-10-27 22:53:10 8544 [Note] InnoDB: Highest supported file format is Barracuda.
+2023-10-27 22:53:10 8544 [Note] InnoDB: Starting crash recovery from checkpoint LSN=51657981
+2023-10-27 22:53:10 8544 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-10-27 22:53:10 8544 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-10-27 22:53:10 8544 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-10-27 22:53:10 8544 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-10-27 22:53:10 8544 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-10-27 22:53:10 8544 [Note] InnoDB: Waiting for purge to start
+2023-10-27 22:53:10 8544 [Note] InnoDB: 5.7.33 started; log sequence number 51657990
+2023-10-27 22:53:10 8916 [Note] InnoDB: Loading buffer pool(s) from c:\angular_crud\mariadb-10.2.37-win32\data\ib_buffer_pool
+2023-10-27 22:53:10 8916 [Note] InnoDB: Buffer pool(s) load completed at 231027 22:53:10
+2023-10-27 22:53:10 8544 [Note] Plugin 'FEEDBACK' is disabled.
+2023-10-27 22:53:10 8544 [Note] Server socket created on IP: '::'.
+2023-10-27 22:53:10 8544 [Note] Reading of all Master_info entries succeeded
+2023-10-27 22:53:10 8544 [Note] Added new Master_info '' to hash table
+2023-10-27 22:53:10 8544 [Note] C:\angular_crud\mariadb-10.2.37-win32\bin\mysqld.exe: ready for connections.
+Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribution
+2023-10-28 20:55:12 8936 [Warning] Host name 'AQUINO.www.tendawifi.com' could not be resolved: No such host is known. 
+2023-10-29  0:18:52 5924 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-10-29  0:18:52 5924 [Note] InnoDB: Uses event mutexes
+2023-10-29  0:18:52 5924 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-10-29  0:18:52 5924 [Note] InnoDB: Number of pools: 1
+2023-10-29  0:18:52 5924 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-10-29  0:18:52 5924 [Note] InnoDB: Initializing buffer pool, total size = 384M, instances = 1, chunk size = 128M
+2023-10-29  0:18:52 5924 [Note] InnoDB: Completed initialization of buffer pool
+2023-10-29  0:18:52 5924 [Note] InnoDB: Highest supported file format is Barracuda.
+2023-10-29  0:18:52 5924 [Note] InnoDB: Starting crash recovery from checkpoint LSN=51658018
+2023-10-29  0:18:53 5924 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-10-29  0:18:53 5924 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-10-29  0:18:53 5924 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-10-29  0:18:53 5924 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-10-29  0:18:53 5924 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-10-29  0:18:53 5924 [Note] InnoDB: Waiting for purge to start
+2023-10-29  0:18:53 5924 [Note] InnoDB: 5.7.33 started; log sequence number 51658027
+2023-10-29  0:18:54 9012 [Note] InnoDB: Loading buffer pool(s) from c:\angular_crud\mariadb-10.2.37-win32\data\ib_buffer_pool
+2023-10-29  0:18:54 9012 [Note] InnoDB: Buffer pool(s) load completed at 231029  0:18:54
+2023-10-29  0:18:54 5924 [Note] Plugin 'FEEDBACK' is disabled.
+2023-10-29  0:18:54 5924 [Note] Server socket created on IP: '::'.
+2023-10-29  0:18:54 5924 [Note] Reading of all Master_info entries succeeded
+2023-10-29  0:18:54 5924 [Note] Added new Master_info '' to hash table
+2023-10-29  0:18:54 5924 [Note] C:\angular_crud\mariadb-10.2.37-win32\bin\mysqld.exe: ready for connections.
+Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribution
+2023-10-29 16:51:28 13772 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2023-10-29 16:51:28 13772 [Note] InnoDB: Uses event mutexes
+2023-10-29 16:51:28 13772 [Note] InnoDB: Compressed tables use zlib 1.2.11
+2023-10-29 16:51:28 13772 [Note] InnoDB: Number of pools: 1
+2023-10-29 16:51:28 13772 [Note] InnoDB: Using SSE2 crc32 instructions
+2023-10-29 16:51:28 13772 [Note] InnoDB: Initializing buffer pool, total size = 384M, instances = 1, chunk size = 128M
+2023-10-29 16:51:28 13772 [Note] InnoDB: Completed initialization of buffer pool
+2023-10-29 16:51:28 13772 [Note] InnoDB: Highest supported file format is Barracuda.
+2023-10-29 16:51:28 13772 [Note] InnoDB: Starting crash recovery from checkpoint LSN=51658055
+2023-10-29 16:51:28 13772 [Note] InnoDB: 128 out of 128 rollback segments are active.
+2023-10-29 16:51:28 13772 [Note] InnoDB: Removed temporary tablespace data file: "ibtmp1"
+2023-10-29 16:51:28 13772 [Note] InnoDB: Creating shared tablespace for temporary tables
+2023-10-29 16:51:28 13772 [Note] InnoDB: Setting file '.\ibtmp1' size to 12 MB. Physically writing the file full; Please wait ...
+2023-10-29 16:51:28 13772 [Note] InnoDB: File '.\ibtmp1' size is now 12 MB.
+2023-10-29 16:51:28 13772 [Note] InnoDB: 5.7.33 started; log sequence number 51658064
+2023-10-29 16:51:28 1848 [Note] InnoDB: Loading buffer pool(s) from c:\angular_crud\mariadb-10.2.37-win32\data\ib_buffer_pool
+2023-10-29 16:51:28 1848 [Note] InnoDB: Buffer pool(s) load completed at 231029 16:51:28
+2023-10-29 16:51:28 13772 [Note] Plugin 'FEEDBACK' is disabled.
+2023-10-29 16:51:28 13772 [Note] Server socket created on IP: '::'.
+2023-10-29 16:51:28 13772 [Note] Reading of all Master_info entries succeeded
+2023-10-29 16:51:28 13772 [Note] Added new Master_info '' to hash table
+2023-10-29 16:51:28 13772 [Note] C:\angular_crud\mariadb-10.2.37-win32\bin\mysqld.exe: ready for connections.
+Version: '10.2.37-MariaDB'  socket: ''  port: 8189  mariadb.org binary distribution
